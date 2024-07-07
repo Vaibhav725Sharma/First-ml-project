@@ -69,7 +69,7 @@ Now open up your local host 0.0.0.0:8080
 
 ## 3. Create ECR repo to store/save docker image
 
-    - Save the URI: 136566696263.dkr.ecr.us-east-1.amazonaws.com/mlproject
+    - Save the URI: 339712801501.dkr.ecr.us-east-1.amazonaws.com/mlproject
 
 ## 4. Create EC2 machine (Ubuntu)
 
@@ -89,8 +89,6 @@ Now open up your local host 0.0.0.0:8080
 
     sudo usermod -aG docker ubuntu
 
-    newgrp docker
-
 # 6. Configure EC2 as self-hosted runner:
 
     setting>actions>runner>new self hosted runner> choose os> then run command one by one
@@ -103,9 +101,9 @@ Now open up your local host 0.0.0.0:8080
 
     AWS_REGION = us-east-1
 
-    AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
+    AWS_ECR_LOGIN_URI = demo>>  339712801501.dkr.ecr.us-east-1.amazonaws.com
 
-    ECR_REPOSITORY_NAME = simple-app
+    ECR_REPOSITORY_NAME = mlproject
 
 git config --global user.name "Vaibhav725Sharma"
 git config --global user.email "Vsharma4038@gmail.com"
